@@ -8,6 +8,8 @@ The container uses the forticlientsslvpn_cli linux binary to manage ppp interfac
 
 All of the container traffic is routed through the VPN, so you can in turn route host traffic through the container to access remote subnets.
 
+Before building image you need to place your .pfx file in the same directory as the Dockerfile.
+
 ### Linux
 
 ```bash
