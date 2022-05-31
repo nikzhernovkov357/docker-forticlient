@@ -54,7 +54,7 @@ docker run -it --rm \
   -e VPNPASS=secret \
   -e CERTIFICATE=file.pfx \
   -e CERTIFICATEPASS=secret \
-  auchandirect/forticlient
+  hybirdcorp/forticlient
 
 # Add route for you remote subnet (ex. 10.201.0.0/16)
 sudo route add -net 10.201.0.0/16 $(docker-machine ip fortinet)
