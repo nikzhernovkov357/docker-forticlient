@@ -21,7 +21,9 @@ docker run -it --rm \
   -e VPNADDR=host:port \
   -e VPNUSER=me@domain \
   -e VPNPASS=secret \
-  auchandirect/forticlient
+  -e CERTIFICATE=file.pfx \
+  -e CERTIFICATEPASS=secret \
+  hybirdcorp/docker-forticlient
 
 # Add route for you remote subnet (ex. 10.201.0.0/16)
 ip route add 10.201.0.0/16 via 172.20.0.2
@@ -48,6 +50,8 @@ docker run -it --rm \
   -e VPNADDR=host:port \
   -e VPNUSER=me@domain \
   -e VPNPASS=secret \
+  -e CERTIFICATE=file.pfx \
+  -e CERTIFICATEPASS=secret \
   auchandirect/forticlient
 
 # Add route for you remote subnet (ex. 10.201.0.0/16)
